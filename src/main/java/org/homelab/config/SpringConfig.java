@@ -8,14 +8,14 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /*
-To jest jedna zmetod
+To jest jedna z metod
  */
 @Configuration
 public class SpringConfig {
 
     @Bean
     public IPizza pizza(){
-        return new GoodPizza(15,"GOOD P");
+        return new GoodPizza(115,"GOOD PIZZA");
     }
 
     @Bean(name = "orderDefault")
