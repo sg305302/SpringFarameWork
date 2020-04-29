@@ -1,7 +1,7 @@
-package org.homelab.impl;
+package org.homelab.impl.overt;
 
-import org.homelab.api.IOrder;
-import org.homelab.api.IPizza;
+import org.homelab.impl.overt.api.IOrder;
+import org.homelab.impl.overt.api.IPizza;
 
 public class Order implements IOrder {
     private IPizza pizza;

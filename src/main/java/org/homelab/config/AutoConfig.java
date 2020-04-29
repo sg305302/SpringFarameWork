@@ -1,9 +1,8 @@
 package org.homelab.config;
 
-import org.homelab.api.IPizza;
 import org.homelab.impl.auto.ExoticPizza;
 import org.homelab.impl.auto.HawaiPizza;
-import org.homelab.impl.auto.IAutoPizza;
+import org.homelab.impl.auto.api.IAutoPizza;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -13,7 +12,7 @@ import java.util.List;
 
 @Configuration
 @ComponentScan("org.homelab.impl.auto") //może być tablica paczek
-@Import(SpringConfig.class)
+@Import(OvertConfig.class)
 public class AutoConfig {
 
     @Bean

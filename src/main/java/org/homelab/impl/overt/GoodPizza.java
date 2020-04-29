@@ -1,6 +1,6 @@
-package org.homelab.impl;
+package org.homelab.impl.overt;
 
-import org.homelab.api.IPizza;
+import org.homelab.impl.overt.api.IPizza;
 
 public class GoodPizza implements IPizza {
 

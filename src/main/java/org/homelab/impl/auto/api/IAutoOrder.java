@@ -1,4 +1,4 @@
-package org.homelab.impl.auto;
+package org.homelab.impl.auto.api;
 
 public interface IAutoOrder {
     void printOrder();

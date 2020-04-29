@@ -1,6 +1,7 @@
 package org.homelab.impl.auto;
 
 import org.homelab.impl.auto.annot.AnnotPizza;
+import org.homelab.impl.auto.api.IAutoPizza;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;

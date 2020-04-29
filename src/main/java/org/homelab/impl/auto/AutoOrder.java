@@ -1,14 +1,12 @@
 package org.homelab.impl.auto;
 
-import org.homelab.api.IOrder;
-import org.homelab.api.IPizza;
 import org.homelab.impl.auto.annot.AnnotPizza;
+import org.homelab.impl.auto.api.IAutoOrder;
+import org.homelab.impl.auto.api.IAutoPizza;
+import org.homelab.impl.overt.api.IPizza;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.beans.factory.config.ConfigurableBeanFactory;
-import org.springframework.context.annotation.Scope;
-import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

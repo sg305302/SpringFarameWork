@@ -1,10 +1,8 @@
 package org.homelab;
 
-import org.homelab.api.IOrder;
 import org.homelab.config.AutoConfig;
-import org.homelab.config.SpringConfig;
-import org.homelab.impl.Order;
-import org.homelab.impl.auto.IAutoOrder;
+import org.homelab.impl.auto.api.IAutoOrder;
+import org.homelab.impl.overt.api.IOrder;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class App {
