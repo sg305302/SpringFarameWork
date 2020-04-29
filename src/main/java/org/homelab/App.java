@@ -14,13 +14,13 @@ public class App {
         order.printOrder();*/
 
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AutoConfig.class);
-        IAutoOrder autoOrder = (IAutoOrder) context.getBean(IAutoOrder.class);
-        IOrder order = (IOrder) context.getBean(IOrder.class);
+        IAutoOrder autoOrder = context.getBean(IAutoOrder.class);
         autoOrder.printOrder();
         autoOrder.printAnnotOrder();
         autoOrder.printOpenPizza();
 
         System.out.println("--- Jawna Konfiguracja---");
+        IOrder order = context.getBean(IOrder.class);
         order.printOrder();
 
     }
